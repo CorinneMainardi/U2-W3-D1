@@ -2,24 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=
-    , initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
-    <form>
+    <form id="form">
+      <h3>Insert here your information</h3>
       <label for="petName">Pet name: </label>
-      <input name="petName" id="petName" type="text" placeolder="pet Name" />
+      <input name="petName" id="petName" type="text" placeholder="Pet Name" />
       <label for="ownerName">Owner name: </label>
-      <input name="ownerName" id="ownerName" type="text" placeolder="owner Name" />
+      <input name="ownerName" id="ownerName" type="text" placeholder="Owner Name" />
       <label for="species">Species: </label>
-      <input name="species" id="species" type="text" placeolder="species" />
+      <input name="species" id="species" type="text" placeholder="Species" />
       <label for="breed">Breed: </label>
-      <input name="breed" id="breed" type="text" placeolder="breed" />
+      <input name="breed" id="breed" type="text" placeholder="Breed" />
+      <button type="submit">Send info</button>
     </form>
+
+    <section>
+      <h3>Pets List</h3>
+      <ul id="list"></ul>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
